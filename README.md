@@ -13,7 +13,9 @@
 # 概要
 
 - COVID-19の感染者データ
-  - [https://github.com/kaz-ogiwara/covid19.git](https://github.com/kaz-ogiwara/covid19.git)
+  - ~~https://github.com/kaz-ogiwara/covid19.git~~
+  - [https://jag-japan.com/covid19map-readme/](https://jag-japan.com/covid19map-readme/)
+    - CSV : [https://dl.dropboxusercontent.com/s/6mztoeb6xf78g5w/COVID-19.csv](https://dl.dropboxusercontent.com/s/6mztoeb6xf78g5w/COVID-19.csv)
 
 # 前提
 
