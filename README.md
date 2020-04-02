@@ -7,6 +7,8 @@
 - [前提](#%e5%89%8d%e6%8f%90)
 - [環境構築](#%e7%92%b0%e5%a2%83%e6%a7%8b%e7%af%89)
 - [使い方](#%e4%bd%bf%e3%81%84%e6%96%b9)
+  - [データファイルをダウンロード](#%e3%83%87%e3%83%bc%e3%82%bf%e3%83%95%e3%82%a1%e3%82%a4%e3%83%ab%e3%82%92%e3%83%80%e3%82%a6%e3%83%b3%e3%83%ad%e3%83%bc%e3%83%89)
+  - [Jupyter Lab](#jupyter-lab)
 
 <!-- /TOC -->
 
@@ -34,6 +36,13 @@ pip install -r requirements.txt
 ```
 
 # 使い方
+## データファイルをダウンロード
+
+```sh
+curl -o COVID-19.csv https://dl.dropboxusercontent.com/s/6mztoeb6xf78g5w/COVID-19.csv
+```
+
+## Jupyter Lab
 
 ```sh
 jupyter lab
