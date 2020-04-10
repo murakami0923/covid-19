@@ -4,6 +4,7 @@
 
 - [covid-19](#covid-19)
 - [概要](#概要)
+- [データファイルの取得元について](#データファイルの取得元について)
 - [動作環境](#動作環境)
 - [注意、お願い](#注意お願い)
 - [事前準備](#事前準備)
@@ -21,19 +22,28 @@
 
 # 概要
 
-- COVID-19の感染者データ
-  - ~~https://github.com/kaz-ogiwara/covid19.git~~
-  - [https://jag-japan.com/covid19map-readme/](https://jag-japan.com/covid19map-readme/)
-    - CSV : [https://dl.dropboxusercontent.com/s/6mztoeb6xf78g5w/COVID-19.csv](https://dl.dropboxusercontent.com/s/6mztoeb6xf78g5w/COVID-19.csv)
+COVID-19の感染者数について、
+
+- 都道府県を指定（できれば複数）して、それらの都道府県の時系列変化をみてみたい
+- 特定の日付（今日、昨日、先週の○曜日、など）を指定して、その日の都道府県別の感染者数を見てみたい
+
+という思いがあり、感染者データのCSVファイルから集計してグラフを生成する処理を、Jupyter Labで作成しました。
+
+# データファイルの取得元について
+
+COVID-19の感染者データについては、ジャッグジャパン株式会社様が「都道府県別新型コロナウイルス感染者数マップ」のサイト（[https://jag-japan.com/covid19map-readme/](https://jag-japan.com/covid19map-readme/)）にて公開されているCSVデータを使用しています。
 
 # 動作環境
 
-- ローカルでPython3、Jupyter Labをインストールして実行
-- Google Colaboratoryにノートブックをインポートして実行
+当初は、ローカルでPython3、Jupyter Labをインストールして実行するように作成しましたが、  
+ローカルに環境を立てる手間がかかる、勃て方がわからない、などのケースも考えられることから、  
+Google Colaboratoryにノートブックをインポートして実行できるようにしました。
 
 # 注意、お願い
 
 - データファイルや、都道府県CSVのファイル(Google Colaboratoryの場合)のダウンロードは、必要最低限の回数にしてください。
+- 手探りで作っているので、間違いや使いにくいところなど、あるかと思いますが、ご了承ください。
+- このソフトウェアを使用することにより損害が生じた場合には、第三者への損害や被害の修復も含み、その結果責任は全て利用者に帰することとします。
 
 # 事前準備
 ## ローカル環境で使う場合
