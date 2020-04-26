@@ -78,8 +78,8 @@ curl -o COVID-19.csv https://dl.dropboxusercontent.com/s/6mztoeb6xf78g5w/COVID-1
 jupyter lab
 ```
 
-Jupyter Labが起動したら、`covid-19-notebook.ipynb` を開き、実行します。
-詳細については `covid-19-notebook.ipynb` に記載していきます。
+Jupyter Labが起動したら、`covid-19-jp-notebook.ipynb` を開き、実行します。
+詳細については `covid-19-jp-notebook.ipynb` に記載していきます。
 
 ## GoogleColaboratoryで使う場合
 ### githubから
