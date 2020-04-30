@@ -24,4 +24,5 @@ READMEとノートブックは、それぞれ作成しますので、READMEは�
 # 参照先
 
 - [日本国内（日別・都道府県別） : README-jp.md をご参照ください。](./README-jp.md)
+- [世界（日別・国別） : README-global.md をご参照ください。](./README-global.md)
 
