@@ -96,11 +96,15 @@ Google Colaboratoryのサイト（[https://colab.research.google.com/](https://c
 
 ノートブックを開くダイアログが開いたら、「GitHub」タブを開き、以下のように入力・選択します。
 
-![](readme-static/img/colab-github-import.png)
-
 - githubのURL：[https://github.com/murakami0923/covid-19](https://github.com/murakami0923/covid-19)
 - リポジトリ：murakami0923/covid-19
 - ブランチ：master
+
+これを入力すると、以下のように、ノートブックのファイルの一覧が表示されます。
+
+![](readme-static/img/colab-github-import.png)
+
+`covide-19-jp-notebook.ipynb` のファイル名をクリックすると、ブラウザの新しいタブにノートブックが表示されます。
 
 #### ドライブにコピーを保存
 
@@ -112,7 +116,7 @@ githubからインポートしたノートブックの画面になるので、�
 ### ダウンロードを有効に（初回実行、データファイルの最新版を取得し直す場合）
 
 Google Colaboratory上では、初回実行時に、都道府県CSVとデータファイルをダウンロードする必要があります。  
-ダウンロードを有効にするフラグを `DOWNLOAD` の定数として設定していますので、初回だけ値を変更します。
+ダウンロードを有効にするフラグを `DOWNLOAD` の定数として設定していますので、初回だけ値を変更してノートブックを実行します。
 
 ![](readme-static/img/colab-download-01-true.png)
 
