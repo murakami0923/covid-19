@@ -14,9 +14,8 @@
         - [データファイルをダウンロード](#データファイルをダウンロード)
         - [Jupyter Labを起動](#jupyter-labを起動)
     - [GoogleColaboratoryで使う場合](#googlecolaboratoryで使う場合)
-        - [githubからノートブックをコピー](#githubからノートブックをコピー)
+        - [githubからノートブックをインポート](#githubからノートブックをインポート)
         - [データファイルをダウンロード](#データファイルをダウンロード-1)
-        - [ダウンロードを無効に（ダウンロードしたファイルで実行）](#ダウンロードを無効にダウンロードしたファイルで実行)
 
 <!-- /TOC -->
 
@@ -83,7 +82,7 @@ Jupyter Labが起動したら、`covid-19-jp-notebook.ipynb` を開き、実行�
 詳細については `covid-19-jp-notebook.ipynb` に記載していきます。
 
 ## GoogleColaboratoryで使う場合
-### githubからノートブックをコピー
+### githubからノートブックをインポート
 #### ノートブックを開くダイアログを表示
 
 Google Colaboratoryのサイト（[https://colab.research.google.com/](https://colab.research.google.com/)）を開きます。
@@ -97,11 +96,15 @@ Google Colaboratoryのサイト（[https://colab.research.google.com/](https://c
 
 ノートブックを開くダイアログが開いたら、「GitHub」タブを開き、以下のように入力・選択します。
 
-![](readme-static/img/colab-github-import.png)
-
 - githubのURL：[https://github.com/murakami0923/covid-19](https://github.com/murakami0923/covid-19)
 - リポジトリ：murakami0923/covid-19
 - ブランチ：master
+
+これを入力すると、以下のように、ノートブックのファイルの一覧が表示されます。
+
+![](readme-static/img/colab-github-import.png)
+
+`covide-19-global-notebook.ipynb` のファイル名をクリックすると、ブラウザの新しいタブにノートブックが表示されます。
 
 #### ドライブにコピーを保存
 
@@ -112,12 +115,24 @@ githubからインポートしたノートブックの画面になるので、�
 
 ### データファイルをダウンロード
 
-後日記載します。
+Google Colaboratoryのページの左端にあるフォルダーのアイコンをクリックします。
 
-### ダウンロードを無効に（ダウンロードしたファイルで実行）
+![](readme-static/img/colab-data-upload-01.png)
 
-一旦、都道府県CSVとデータファイルをダウンロードしたら、 `DOWNLOAD` の定数をもとに戻します。
+ファイルブラウザが表示されるので、「アップロード」をクリックします。
 
-![](readme-static/img/colab-download-02-false.png)
+![](readme-static/img/colab-data-upload-02.png)
 
--->
+ファイル選択ボックスが表示されるので、ローカルにダウンロードした `COVID-19-global-data.csv` のファイルを選択して開きます。
+
+![](readme-static/img/colab-data-upload-03.png)
+
+アップロード時に以下のような注意書きが表示される場合があるので「OK」をクリックします。
+
+![](readme-static/img/colab-data-upload-04.png)
+
+アップロードすると、ファイルブラウザの表示が更新されます。
+
+![](readme-static/img/colab-data-upload-05.png)
+
+このように`COVID-19-global-data.csv` のファイルが表示されていれば、アップロードが成功したので、ノートブックを実行します。
