@@ -53,6 +53,7 @@ Google Colaboratoryにノートブックをインポートして実行できる�
   - Mac
   - Linux
   - WSL
+- sqlite等（jupyter labの実行時に必要）
 - Python 3.8.2
     - 開発の際はpyenvを使っています。
       - pyenv、pyenv-virtualenvインストールの参考 : [https://qiita.com/Kodaira_/items/feadfef9add468e3a85b](https://qiita.com/Kodaira_/items/feadfef9add468e3a85b)
@@ -77,6 +78,20 @@ curl -o COVID-19.csv https://dl.dropboxusercontent.com/s/6mztoeb6xf78g5w/COVID-1
 ```sh
 jupyter lab
 ```
+
+【注意】
+sqliteに関するパッケージをインストールしていない場合、jupyter labを起動しようとしたときに、sqliteに関するエラーが表示されることがあります。  
+その場合、aptやyum等でsqliteに関するパッケージをインストールします。
+
+参考：[Qiita : pyenv, pipenv 環境でjupyter notebook使う時にsqliteに関するエラーが出たとき](https://qiita.com/kazetof/items/adeb331c99d408853f07)
+
+ubuntuの場合の一例：
+
+```sh
+sudo apt install libsqlite3-dev libreadline6-dev libbz2-dev libssl-dev libsqlite3-dev libncursesw5-dev libffi-dev libdb-dev libexpat1-dev zlib1g-dev liblzma-dev libgdbm-dev libmpdec-dev
+```
+
+※既にパッケージがインストールされていて、インストール済みのバージョンの方が新しいなどのエラーになるケースもあるため、その場合は、インストール対象のパッケージから該当するものを除外して再実行します。
 
 Jupyter Labが起動したら、`covid-19-jp-notebook.ipynb` を開き、実行します。
 詳細については `covid-19-jp-notebook.ipynb` に記載していきます。
